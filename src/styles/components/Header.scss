@@ -1,13 +1,30 @@
+@import '../_globals.scss';
+
 .header {
     height: $headerHeight;
     width: 100%;
-    background: linear-gradient(135deg, $primaryColor, $primaryColor 60%, #FFF);
+    background: $primaryColor;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    font-size: 17px;
+    color: rgba(245, 245, 245, 1);
     .header-title {
-        line-height: $headerHeight;
-        padding-left: 30px;
         font-size: 24px;
-        color: #FFF;
-        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .header-item {
+        line-height: $headerHeight;
+        cursor: pointer;
+        vertical-align: middle;
+        transition: color 0.15s ease;
+        &:hover {
+            color: rgba(200, 200, 200, 1);
+        }
+        &:not(.right) {
+            padding-left: 30px;
+        }
+        &.right {
+            padding-right: 30px;
+            float: right;
+        }
     }
 }

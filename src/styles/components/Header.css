@@ -1,8 +1,22 @@
 .header {
   height: 50px;
   width: 100%;
-  background: #ff5722; }
+  background: #ff5722;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  font-size: 17px;
+  color: whitesmoke; }
   .header .header-title {
+    font-size: 24px;
+    font-weight: 500; }
+  .header .header-item {
     line-height: 50px;
-    padding-left: 30px;
-    color: 'white'; }
+    cursor: pointer;
+    vertical-align: middle;
+    transition: color 0.15s ease; }
+    .header .header-item:hover {
+      color: #c8c8c8; }
+    .header .header-item:not(.right) {
+      padding-left: 30px; }
+    .header .header-item.right {
+      padding-right: 30px;
+      float: right; }

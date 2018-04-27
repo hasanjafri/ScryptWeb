@@ -1,15 +1,24 @@
-.home-container {
-    background-image: url('../assets/images/esportssplash.jpeg');
-    background-size: cover;
-    height: calc(100% - #{$headerHeight});
-}
+@import '../_globals.scss';
 
-.home-container:before {
-    content: '';
-    position: absolute;
-    top: $headerHeight;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(127deg, #000000 0%, rgba(0, 0, 0, 0.61) 27%, transparent 70%);
+.home-container {
+    .welcome {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        .title {
+            color: #FFF;
+            font-size: 32px;
+            font-weight: bold;
+            background: rgba(31, 31, 31, 0.9);
+        padding: 10px 20px;
+        }
+        .button-group {
+            margin-top: 30px;
+            button {
+                &:last-child {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
 }

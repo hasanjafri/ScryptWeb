@@ -1,2 +1,14 @@
-.home-container {
-  background-image: url("../assets/images/esportssplash.jpeg"); }
+.home-container .welcome {
+  position: absolute;
+  top: 65%;
+  left: 10%; }
+  .home-container .welcome .title {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: bold;
+    background: rgba(31, 31, 31, 0.9);
+    padding: 10px 20px; }
+  .home-container .welcome .button-group {
+    margin-top: 30px; }
+    .home-container .welcome .button-group button:last-child {
+      margin-left: 25px; }
