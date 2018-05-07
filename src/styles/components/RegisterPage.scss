@@ -1,5 +1,45 @@
 @import '../_globals.scss';
 
 .register-container {
-    padding: 30px;
+    flex: 1;
+    overflow: auto;
+    background: #762fa8;
+    label {
+        font-size: 18px;
+    }
+    .register-card {
+        @media only screen and (max-width: 1000px) {
+            margin: 100px 30px;
+        }
+        .button-group {
+            display: flex;
+            button {
+                flex: 1;
+            }
+            margin: 50px;
+        }
+        margin: 50px 25%;
+        background: white;
+        padding: 20px;
+        .register-title-container {
+            display: flex;
+            align-items: center;
+            .register-title {
+                color: #626262;
+                font-size: 25px;
+                flex: 1;
+            }
+            .link {
+                font-size: 18px;
+            }
+            
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #bbbbbb;
+        }
+        .pt-checkbox {
+            margin-top: 15px;
+        }
+    }
+    
 }

@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 
-import LoginPage from '../components/LoginPage';
-import twitchLogo from '../assets/images/twitchLogo.svg';
+import LoginPopover from '../components/LoginPopover';
 
 class Header extends Component {
     render() {
@@ -12,7 +11,7 @@ class Header extends Component {
                     <span className="header-title header-item" onClick={() => this.props.history.push('/')}>Scrypt</span>
                     <span className="header-item">Browse Games</span>
                     <span className="header-item right">
-                        <img src={twitchLogo} height="40px" />
+                        <LoginPopover />
                     </span>
                 </div>
             </Fragment>
@@ -20,4 +19,4 @@ class Header extends Component {
     }
 }
 
-export default withRouter(Header);
+export default withRouter(Header); 

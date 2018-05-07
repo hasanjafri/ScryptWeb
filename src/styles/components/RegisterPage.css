@@ -1,2 +1,32 @@
 .register-container {
-  padding: 30px; }
+  flex: 1;
+  overflow: auto;
+  background: #762fa8; }
+  .register-container label {
+    font-size: 18px; }
+  .register-container .register-card {
+    margin: 50px 25%;
+    background: white;
+    padding: 20px; }
+    @media only screen and (max-width: 1000px) {
+      .register-container .register-card {
+        margin: 100px 30px; } }
+    .register-container .register-card .button-group {
+      display: flex;
+      margin: 50px; }
+      .register-container .register-card .button-group button {
+        flex: 1; }
+    .register-container .register-card .register-title-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #bbbbbb; }
+      .register-container .register-card .register-title-container .register-title {
+        color: #626262;
+        font-size: 25px;
+        flex: 1; }
+      .register-container .register-card .register-title-container .link {
+        font-size: 18px; }
+    .register-container .register-card .pt-checkbox {
+      margin-top: 15px; }

@@ -1,2 +1,4 @@
-.login-container .pt-popover-content {
-  padding: 40px; }
+.login-container {
+  padding: 20px; }
+  .login-container button {
+    margin: 10px 0; }

@@ -1,20 +1,22 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter } from 'react-router-dom'
-import Router from './components/Router';
+import { Router } from 'react-router-dom'
+import ToastHandler from './components/widgets/ToastHandler';
+import history from './helpers/history';
+import Routes from './components/Routes';
 import Header from './components/Header';
 
 class App extends Component {
-    componentDidMount() {
-
-    }
     render() {
         return (
-            <BrowserRouter>
-                <Fragment>
-                    <Header />
-                    <Router />
-                </Fragment>
-            </BrowserRouter>
+            <Fragment>
+                <ToastHandler />
+                <Router history={history}>
+                    <Fragment>
+                        <Header />
+                        <Routes />
+                    </Fragment>
+                </Router>
+            </Fragment>
         )
     }
 }

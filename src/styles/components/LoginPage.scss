@@ -1,7 +1,8 @@
 @import '../_globals.scss';
 
 .login-container {
-    .pt-popover-content {
-        padding: 40px;
+    padding: 20px;
+    button {
+        margin: 10px 0;
     }
 }
